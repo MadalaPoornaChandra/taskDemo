@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vertical Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.vertical-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+
+ul.vertical-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block; 
+    transition: background-color 0.3s;
+}
+
+
+li:first-child{
+    background-color: orange;
+}
+
+
+ul.vertical-menu li a:hover {
+    background-color: white;
+}
+
+
+ul.vertical-menu li:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+
+
+.nav-container {
+    width: 200px; 
+    background-color:aqua;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+</head>
+<body>
+   <h1>Vertical Navigation Bar</h1>
+    <div class="nav-container">
+    <ul class="vertical-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">Bootstrap</a></li>
+    </ul>
+   </div>
+</body>
+</html>
